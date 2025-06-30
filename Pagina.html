@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso 3</title>
+    <link rel="stylesheet" href="Pagina.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+       <div class="contenedor">
+          <p class="logo">Esteban Program </p>
+       <nav>
+        <a href="#somos">Acerca de</a>
+        <a href="#cont-programas">Proyectos</a>
+        <a href="#caracteristicas">Habilidades</a>
+        <a href="#Recommendations">Recomendaciones</a>
+       </nav>
+       </div>
+    </header>
+    <section id="hero">
+        <div class="contenedor">
+        <h1>Aprende a programar <br>con el mejor </h1>
+        <form action="#">
+            <button>Info ak</button>
+            </form> 
+        </div>
+    </section>
+
+    <section id="somos">
+      <div class="contenedor">
+        <div class="img-contenedor"></div>
+        <div class="texto">
+        <h2>Soy Esteban Muñoz <span class="color-acento">Bro confia</span></h2>
+        <p>Profesional proactivo, organizado y orientado a resultados, con experiencia en ventas, comercio exterior y gestión comercial. Cuento con habilidades sólidas de comunicación en español, inglés (C1), francés y portugués. Me adapto rápidamente a nuevos entornos y desafíos, con conocimientos en economía, administración, marketing, contabilidad y comercio internacional. Valoro la responsabilidad, la organización y el aprendizaje continuo, manteniéndome actualizado en tecnología y tendencias globales.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cont-programas">
+      <div class="contenedor">
+        <h2>Proyectos</h2>
+        <div class="num-programas">
+        <div class="carta"><h3>Green Escapes</h3>
+            <p>Developed an web app using HTML,CSS,Javascript and Navic system for the development of rural areas via tourism annd hospitality.
+</p>
+            <form action="#">
+            <button>Info ak</button>
+            </form>
+        </div>
+        <div class="carta"><h3>Simple Interest Calculator</h3>
+            <p>Developed a simple interest calculator which takes input for Rate of interest,years,amount of money and gives dynmic output in sentence.
+</p>
+            <form action="#">
+            <button>Info ak</button>
+            </form>
+        </div>
+        <div class="carta"><h3>Units Converter
+</h3>
+            <p>Created a multi page unit converter which converts tempertaure,distance,weight,simplemath,height and time.
+</p>
+            <form action="#">
+            <button>Info ak</button>
+            </form>
+        </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="caracteristicas">
+      <div class="contenedor">
+        
+        <ul>
+            <li>Negociacion</li>
+            <li>Analisis Comercial</li>
+            <li>Trabajo en equipo</li>
+            <li>HTML, CSS, JS</li>
+            <li>Ingles avanzado C1</li>
+            <li>Frances y Portugues Basico</li>
+        </ul>
+
+        
+      </div>
+    </section>
+
+    <section id="aplica">
+        <div class="contenedor">
+        <h2>Listo para programar?</h2>
+        <form action="#">
+            <button>Info ak</button>
+            </form>
+        </div>
+    </section>
+<div class="contenedor">
+    <section id="Recommendations">
+    <h2>Recommendations</h2>
+    <div style="clear:both;"></div>
+    <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+            <span>&#8220;</span>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus perspiciatis possimus deserunt nihil aliquam minus, aspernatur accusamus quas.
+            <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+            <span>&#8220;</span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptatum reprehenderit nisi facere natus unde iusto quos. Distinctio recusandae numquam quibusdam.
+            <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+            <span>&#8220;</span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, voluptatum.
+            <span>&#8221;</span>
+        </div>
+    </div>
+</section>
+
+   <section id="contact">
+    <div class="flex_center">
+        <fieldset>
+            <legend class="introduction">Leave a Recommendation</legend>          
+            <input type="text" placeholder="Name (Optional)"> <br/>
+            <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+            <div class="flex_center">
+                <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+            </div>
+        </fieldset>
+    </div>
+    </section>
+    
+    <div class="iconbutton">
+        <a href="#home">
+          <!--Add the code here for the logo to appear and the icon to be actionable-->
+         
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </a>
+    </div>
+    
+    <div class="popup" id="popup" class="flex_center">
+        <img src="Media/checkmark--outline.svg"/>
+        <h3>Thanks for leaving a recommendation !</h3>
+        <button >Ok</button>
+    </div>
+  </div>
+    <script src="./script.js"></script>
+  </body>
+    <footer>
+        <div class="contenedor">
+            <p>&copy; 2025 Sexban</p>
+        </div>
+    </footer>
+    
+</html>

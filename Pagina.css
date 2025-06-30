@@ -1,0 +1,343 @@
+ *{
+    box-sizing: border-box;
+ }
+
+ html{
+    scroll-behavior: smooth;
+ }
+
+  body{
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+ }
+
+ h1{font-size: 2.5rem;}
+ h2{font-size: 1.5rem;}
+ h3{font-size: 1.2rem;}
+ p{font-size: 1rem;}
+ ul{list-style-type: none;}
+
+ button{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0,0.5);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    color: rgb(255, 255, 255);
+    background-color: rgb(119, 50, 140);
+ }
+
+ button:hover{
+    background-color: rgb(66, 22, 80);
+ }
+
+ .contenedor{
+    max-width: 1400px;
+    margin: auto;
+ }
+
+ .color-acento{
+    color: rgb(119, 50, 140);
+ }
+
+ header{
+    background-color: rgb(245,245,245);
+    
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+}
+
+header .contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 40vh;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5))
+    ,url("media/chip.jpg");
+}
+
+#hero h1{
+    color: rgb(255, 255, 255);
+}
+
+#somos .contenedor{
+    text-align: center;
+    padding: 100px 10px;
+}
+
+#cont-programas{
+    background-color: rgb(26, 26, 26);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#cont-programas .contenedor{
+    padding: 150px 10px;
+}
+
+
+#cont-programas p{
+    display: none;
+}
+
+#cont-programas h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#cont-programas .carta{
+   color: white;
+   background-position-y: 0;
+   background-size: 100% 100px;
+   background-repeat: no-repeat;
+   margin: 30px;
+   background-color: black;
+   border-radius: 15px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1)
+}
+
+.carta:first-child{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("media/mano.jpg");
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("media/server.jpg");
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("media/chip.jpg");
+}
+
+#caracteristicas .contenedor{
+    text-align: center;
+    padding: 200px 10px;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-size: 1.5em;
+}
+
+#aplica{
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 40vh;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5))
+    ,url("media/chip.jpg");
+}
+
+#aplica h2{
+    font-size: 4em;
+}
+#aplica button{
+    
+    font-size: 2em;
+}
+
+footer{
+    background-color: rgb(247, 247, 247);
+}
+
+footer p{
+    padding: 12px 0px;
+    margin: 0;
+}
+
+footer .contenedor{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 150px;
+}
+
+@media (min-width: 888px){
+
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .contenedor{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 30px;
+    }
+    #somos .contenedor{
+        display: flex;
+        justify-content: center;
+    }
+    #somos .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0px 30px;
+        display:flex;
+        flex-direction: column;
+        
+        justify-content: center;
+    }
+    #somos .img-contenedor{
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("media/Circulo.webp");
+        background-size: cover;
+        background-position: center center;
+        width: 400px;
+        height: 400px;
+    }
+    #cont-programas .num-programas{
+        display: flex;
+        justify-content: center;
+    }
+    #cont-programas p{
+        display: block;  
+       
+    }
+    #cont-programas h3{
+        font-size: 1.5em;
+        margin-top: 0;
+    }
+    
+    #cont-programas .carta{
+        padding: 50px;
+    }
+
+    #caracteristicas {
+        background-image: url("media/Circulo.webp");
+        background-size: 500px 400px;
+        background-repeat: no-repeat;
+        background-position:calc(100vw - 550px) 120px;
+}
+    #caracteristicas .contenedor{
+        display: flex;
+        text-align: initial;
+        justify-content: space-between;
+    }
+    #caracteristicas ul{
+        margin-left: 60px;
+    
+    }
+
+    #final h2{
+        font-size: 5em;
+    }
+
+    #final button{
+        font-size: 2.5em;
+    }
+    
+}
+
+@media (min-width: 1200px){
+    #caracteristicas {
+        
+        background-position:calc(100vw - 800px) 120px;
+    
+    }
+}
+
+.all_recommendations {
+    display: flex;
+    align-items: center;
+    margin-left: 1in;
+    flex-direction: row;
+    flex-flow: wrap;
+    padding: 20px;
+  }
+  
+  .recommendation {
+    font-style: italic;
+    text-align: left;
+    width: 21.875rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+    padding: 20px;
+    margin: 10px;
+    border:1px solid gray;
+    font-size: 18px;
+    height:150px
+  }
+  
+  .recommendation span {
+    color: #7600bc;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* Scroll to Top Button */
+  
+  .iconbutton{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: #7600bc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    cursor: pointer;
+    
+  }
+  
+  
+  
+  /* Recommendation Form */
+  
+  input, textarea {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    margin: 10px;  
+    width:100%;
+  }
+  
+  fieldset {
+    display: flexbox;
+    align-content: center;
+    justify-content: center;  
+    padding: 25px; 
+    margin-left: 50px; 
+    margin-right: 50px;   
+    border: thin solid white;
+    width: 50%;
+  }
